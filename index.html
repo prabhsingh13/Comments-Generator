@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <title>Generate Comments</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./favicon.ico">
+
+    <!-- Bootstrap CSS v5.3.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid bg-dark py-3">
+            <div class="container">
+                <h1 class="text-light text-center mb-0">Random Comments Generator</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card bg-warning">
+                        <div class="card-body">
+                            <form id="commentForm">
+                                <div class="mb-3">
+                                    <label for="number" class="form-label">Number of Comments:</label>
+                                    <input type="number" id="number" class="form-control" min="1">
+                                </div>
+                                <div class="mb-3">
+                                    <button type="button" id="type1" class="btn btn-outline-primary" data-type="1">Old Set</button>
+                                    <button type="button" id="type2" class="btn btn-outline-dark" data-type="2">New Set</button>
+                                    <button type="button" id="type3" class="btn btn-outline-success" data-type="3">Type 3</button>
+                                </div>
+                                <button type="button" id="generateBtn" class="btn btn-primary">Generate</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card bg-info">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <label for="commentResult" class="form-label">Generated Comments:</label>
+                                <textarea id="commentResult" class="form-control" rows="5" readonly></textarea>
+                            </div>
+                            <button type="button" id="copyBtn" class="btn btn-primary">Copy All</button>
+                        </div>
+                    </div>
+                    <div id="alertContainer" class="mt-3"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- place footer here -->
+    </footer>
+
+    <script src="./assets/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script> -->
+</body>
+
+</html>
